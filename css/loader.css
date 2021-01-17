@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.page_load{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.load-text{
+    font-size: 80px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+.logo_load2{
+    font-size: 30px;
+    animation: textanimation2 3s ease-in-out;
+    letter-spacing: 7px;
+    transition: ease-in-out;
+
+}
+.logo_load{
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: 400;
+    letter-spacing: 17px;
+    animation: textanimation 3s ease-in-out;
+    transition: ease-in-out;
+
+}
+
+@keyframes textanimation {
+    0%{
+        transform: translateY(-300%);
+    }
+}
+
+
+@keyframes textanimation2 {
+    0%{
+        transform: translateY(250%);
+
+    }
+
+
+}
+
+
+
+
+.load-bar img{
+   width: 100px;
+    height: 12px;
+    margin-top: 200px;
+}
+
+
+#fill{
+    width: 0px;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+}
+
+@media  (max-width: 375px) {
+    .logo_load{
+        font-size: 35px;
+    }
+    .logo_load2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .logo_load {
+        font-size: 75px;
+    }
+
+    .logo_load {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
